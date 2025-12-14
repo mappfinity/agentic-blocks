@@ -1,3 +1,6 @@
+#----------------------------------------------------------------
+# METEO SEARCH TOOL
+#----------------------------------------------------------------
 import datetime
 import requests
 from typing import Optional
