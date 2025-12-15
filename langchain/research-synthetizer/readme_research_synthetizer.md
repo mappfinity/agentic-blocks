@@ -233,7 +233,7 @@ Contributions are welcome! Areas for improvement:
 
 ## 📄 License
 
-[Your License Here]
+- MIT
 
 ## 🙏 Acknowledgments
 
