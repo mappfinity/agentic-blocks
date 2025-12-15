@@ -19,7 +19,7 @@ A fully local, tool-enabled chatbot with session-isolated, persistent memory.
 
 ---
 
-## 2. [LangChain RAG Demo](langchain/RAG-Demo-w-LangChain-v1-Ollama.ipynb)
+## 2. [LangChain RAG](langchain/RAG-Demo-w-LangChain-v1-Ollama.ipynb)
 A lightweight Retrieval-Augmented Generation (RAG) pipeline for grounded Q&A.
 
 **Highlights**
