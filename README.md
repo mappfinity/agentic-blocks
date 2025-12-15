@@ -3,7 +3,7 @@
 Two concise, production-ready examples showcasing **local LLM applications with LangChain + Ollama**.
 
 
-## 1. [🔬 Research Synthetizer Assistant](langchain/research-synthetizer/Research-Synthesizer-Demo-LangChain-v1-Ollama-FAISS)
+## 1. [🔬 Research Synthetizer Assistant](langchain/research-synthetizer/Research-Synthesizer-Demo-LangChain-v1-Ollama-FAISS.ipynb)
 
 ![Overview](langchain/research-synthetizer/img/research-synthetizer.png)
 
