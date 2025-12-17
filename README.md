@@ -32,9 +32,9 @@ A bunch of concise, production-ready examples showcasing **local LLM application
 
 
 ---
-## 2. [Chatbot Assistant with Persistent Memory](langchain/chatbot-with-memory/Chatbot-with-Memory-and-Tools-Demo-w-LangChain-v1-Ollama-Gradio.ipynb)
+## 2. [Chatbot Assistant with Persistent Memory](chatbot-with-memory/Chatbot-with-Memory-and-Tools-Demo-w-LangChain-v1-Ollama-Gradio.ipynb)
 
-![Overview](langchain/chatbot-with-memory/img/cba-with-memory.png)
+![Overview](chatbot-with-memory/img/cba-with-memory.png)
 
 A fully local, tool-enabled chatbot with session-isolated, persistent memory.
 
@@ -49,7 +49,7 @@ A fully local, tool-enabled chatbot with session-isolated, persistent memory.
 
 ---
 
-## 3. [LangChain RAG](langchain/rag-demo/RAG-Demo-w-LangChain-v1-Ollama.ipynb)
+## 3. [LangChain RAG](rag-demo/RAG-Demo-w-LangChain-v1-Ollama.ipynb)
 A lightweight Retrieval-Augmented Generation (RAG) pipeline for grounded Q&A.
 
 **Highlights**
