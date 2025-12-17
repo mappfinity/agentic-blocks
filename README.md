@@ -1,9 +1,9 @@
 # Local LangChain AI Demos
 
-Two concise, production-ready examples showcasing **local LLM applications with LangChain + Ollama**.
+A bunch of concise, production-ready examples showcasing **local LLM applications with LangChain, LangGraph, Ollama, vector databases (Chroma, FAISS, ...) and more**.
 
 
-## 1. [🔬 Research Synthetizer Assistant](langchain/research-synthetizer/Research-Synthesizer-Demo-LangChain-v1-Ollama-FAISS)
+## 1. [🔬 Research Synthetizer Assistant](langchain/research-synthetizer/Research-Synthesizer-Demo-LangChain-v1-Ollama-FAISS.ipynb)
 
 ![Overview](langchain/research-synthetizer/img/research-synthetizer.png)
 
