@@ -3,9 +3,9 @@
 A bunch of concise, production-ready examples showcasing **local LLM applications with LangChain, LangGraph, Ollama, vector databases (Chroma, FAISS, ...) and more**.
 
 
-## 1. [🔬 Research Synthetizer Assistant](langchain/research-synthetizer/Research-Synthesizer-Demo-LangChain-v1-Ollama-FAISS.ipynb)
+## 1. [🔬 Research Synthesizer Assistant](langchain/research-synthesizer/Research-Synthesizer-Demo-LangChain-v1-Ollama-FAISS.ipynb)
 
-![Overview](langchain/research-synthetizer/img/research-synthetizer.png)
+![Overview](langchain/research-synthesizer/img/research-synthesizer.png)
 
 **AI-powered research assistant that synthesizes comprehensive answers from multiple sources.**
 
