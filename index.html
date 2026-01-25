@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local LangChain AI Demos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+    header p {
+      font-size: 1.2em;
+      opacity: 0.95;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    main {
+      padding: 60px 40px;
+    }
+    .demo-section {
+      margin-bottom: 80px;
+      padding-bottom: 60px;
+      border-bottom: 3px solid #f0f0f0;
+    }
+    .demo-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .demo-number {
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 45px;
+      font-weight: bold;
+      font-size: 1.3em;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 2em;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .subtitle {
+      font-size: 1.15em;
+      color: #555;
+      margin-bottom: 30px;
+      font-style: italic;
+    }
+    h3 {
+      font-size: 1.4em;
+      color: #34495e;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+    .features-list, .highlights {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border-left: 4px solid #667eea;
+    }
+    .features-list ul, .highlights ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features-list li, .highlights li {
+      padding: 10px 0;
+      padding-left: 30px;
+      position: relative;
+      color: #555;
+    }
+    .features-list li:before, .highlights li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #667eea;
+      font-weight: bold;
+    }
+    .voice-player {
+      background: #f0f4ff;
+      padding: 30px;
+      border-radius: 10px;
+      margin: 25px 0;
+      border: 2px solid #e0e7ff;
+    }
+    .voice-name {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .voice-description {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+    audio {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      background: white;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .download-link {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .download-link:hover {
+      text-decoration: underline;
+    }
+    .tech-stack {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+    .tech-stack h3 {
+      margin-top: 0;
+    }
+    .tech-stack ul {
+      list-style: none;
+      padding: 0;
+    }
+    .tech-stack li {
+      padding: 8px 0;
+      padding-left: 25px;
+      position: relative;
+    }
+    .tech-stack li:before {
+      content: "⚙️";
+      position: absolute;
+      left: 0;
+    }
+    .note {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 20px;
+      border-radius: 6px;
+      margin-top: 20px;
+      color: #856404;
+    }
+    .success {
+      background: #d4edda;
+      border-left: 4px solid #28a745;
+      padding: 20px;
+      border-radius: 6px;
+      margin-top: 20px;
+      color: #155724;
+    }
+    footer {
+      background: #f8f9fa;
+      padding: 40px;
+      text-align: center;
+      color: #666;
+      border-top: 2px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔗 Local LangChain AI Demos</h1>
+      <p>A bunch of concise, production-ready examples showcasing <strong>local LLM applications with LangChain, LangGraph, Ollama, vector databases and more</strong></p>
+    </header>
+
+    <main>
+      <!-- Demo 1: Research Synthesizer -->
+      <section class="demo-section">
+        <div class="demo-number">1</div>
+        <h2>🔬 Research Synthesizer Assistant</h2>
+        <p class="subtitle">AI-powered research assistant that synthesizes comprehensive answers from multiple sources</p>
+        
+        <h3>Features</h3>
+        <div class="features-list">
+          <ul>
+            <li><strong>Local Documents:</strong> Index and search PDFs/TXT files via FAISS vector database</li>
+            <li><strong>arXiv Papers:</strong> Automatic academic paper retrieval and analysis</li>
+            <li><strong>Web Search:</strong> Real-time information via Tavily API (optional)</li>
+            <li><strong>Smart RAG Pipeline:</strong> HuggingFace embeddings + cross-encoder reranking</li>
+            <li><strong>Modern UI:</strong> Gradio interface with collapsible sidebar and report management</li>
+          </ul>
+        </div>
+
+        <h3>Tech Stack</h3>
+        <div class="features-list">
+          <ul>
+            <li><strong>LLM:</strong> Ollama (Qwen, Mistral) via LangChain/LangGraph</li>
+            <li><strong>Vector DB:</strong> FAISS with all-MiniLM-L6-v2 embeddings</li>
+            <li><strong>Reranking:</strong> Cross-encoder ms-marco-MiniLM-L-6-v2</li>
+            <li><strong>Interface:</strong> Gradio 6.1+</li>
+          </ul>
+        </div>
+
+        <h3>Quick Start</h3>
+        <div class="features-list">
+          <ul>
+            <li>Place documents in ./research_docs</li>
+            <li>Configure CONFIG dictionary (model, API keys, retrieval settings)</li>
+            <li>Run the app - it auto-indexes documents and launches web UI</li>
+            <li>Ask research questions - reports saved to ./report_docs</li>
+          </ul>
+        </div>
+
+        <div class="note">
+          <strong>ℹ️ Note:</strong> Research tool for educational purposes. Verify important information from primary sources.
+        </div>
+      </section>
+
+      <!-- Demo 2: Piper TTS Voice Showcase -->
+      <section class="demo-section">
+        <div class="demo-number">2</div>
+        <h2>🎙️ Piper TTS Voice Showcase</h2>
+        <p class="subtitle">Interactive demo of 4 high-quality neural TTS voices with 904 LibriTTS speaker variants</p>
+
+        <h3>Voice Samples</h3>
+        
+        <div class="voice-player">
+          <div class="voice-name">Heather</div>
+          <div class="voice-description">Natural, conversational female voice (medium quality)</div>
+          <audio controls>
+            <source src="wav/heather.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+          <p><a href="wav/heather.wav" class="download-link" download>📥 Download heather.wav</a> (~500KB)</p>
+        </div>
+
+        <div class="voice-player">
+          <div class="voice-name">Michael</div>
+          <div class="voice-description">Balanced, natural male voice (medium quality)</div>
+          <audio controls>
+            <source src="wav/mike.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+          <p><a href="wav/mike.wav" class="download-link" download>📥 Download mike.wav</a> (~500KB)</p>
+        </div>
+
+        <h3>Highlights</h3>
+        <div class="highlights">
+          <ul>
+            <li><strong>4 voice models:</strong> Heather, Michael, Lessac, LibriTTS</li>
+            <li><strong>904 unique speakers</strong> in LibriTTS multi-speaker model</li>
+            <li><strong>Smart preprocessing:</strong> Tables, citations, markdown cleanup</li>
+            <li><strong>Auto-generate & cache</strong> WAV files locally</li>
+            <li><strong>Table linearization</strong> for natural speech rendering</li>
+            <li><strong>Interactive player</strong> with voice/speaker selection</li>
+          </ul>
+        </div>
+
+        <div class="success">
+          <strong>Use Cases:</strong> Local TTS synthesis, voice comparison, accessibility tools, audio content generation
+        </div>
+      </section>
+
+      <!-- Demo 3: Chatbot with Memory -->
+      <section class="demo-section">
+        <div class="demo-number">3</div>
+        <h2>💬 Chatbot Assistant with Persistent Memory</h2>
+        <p class="subtitle">A fully local, tool-enabled chatbot with session-isolated, persistent memory</p>
+
+        <h3>Highlights</h3>
+        <div class="highlights">
+          <ul>
+            <li><strong>Persistent memory</strong> via LangGraph MemorySaver</li>
+            <li><strong>Tool calling:</strong> Wikipedia, Tavily, custom tools</li>
+            <li><strong>Local LLMs</strong> via Ollama (e.g., qwen2.5:3b)</li>
+            <li><strong>Gradio UI</strong> with session state</li>
+            <li><strong>Privacy-first,</strong> offline-capable</li>
+          </ul>
+        </div>
+
+        <div class="success">
+          <strong>Use Cases:</strong> Personal assistants, research bots, privacy-sensitive apps
+        </div>
+      </section>
+
+      <!-- Demo 4: LangChain RAG -->
+      <section class="demo-section">
+        <div class="demo-number">4</div>
+        <h2>📚 LangChain RAG</h2>
+        <p class="subtitle">A lightweight Retrieval-Augmented Generation (RAG) pipeline for grounded Q&A</p>
+
+        <h3>Highlights</h3>
+        <div class="highlights">
+          <ul>
+            <li><strong>In-memory vector store</strong> with semantic search</li>
+            <li><strong>Automatic document chunking</strong> + embeddings</li>
+            <li><strong>Ollama-powered LLM</strong> (Mistral 7B)</li>
+            <li><strong>Single-turn and multi-turn</strong> chat modes</li>
+            <li><strong>Pluggable embeddings:</strong> HuggingFace or fallback</li>
+          </ul>
+        </div>
+
+        <div class="success">
+          <strong>Use Cases:</strong> Document Q&A, knowledge assistants, RAG prototyping
+        </div>
+      </section>
+
+      <!-- Tech Stack Overview -->
+      <section class="tech-stack">
+        <h3>🛠️ Core Tech Stack</h3>
+        <ul>
+          <li>LangChain (v1.0+)</li>
+          <li>Ollama (local LLM inference)</li>
+          <li>Gradio (chat UI)</li>
+          <li>HuggingFace embeddings (optional)</li>
+        </ul>
+        <p style="margin-top: 20px; color: #555;"><strong>Goal:</strong> Demonstrate clean, modern patterns for building <strong>local, private, LLM-powered systems</strong> with memory, tools, and retrieval.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Local LangChain AI Demos | Production-ready examples for local LLM applications</p>
+    </footer>
+  </div>
+</body>
+</html>
