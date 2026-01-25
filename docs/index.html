@@ -11,342 +11,305 @@
       box-sizing: border-box;
     }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      min-height: 100vh;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      line-height: 1.5;
+      color: #2c2c2c;
+      background: #fafafa;
       padding: 40px 20px;
     }
     .container {
-      max-width: 1000px;
+      max-width: 800px;
       margin: 0 auto;
       background: white;
-      border-radius: 16px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-      overflow: hidden;
+      padding: 50px;
+      border: 1px solid #e0e0e0;
     }
     header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 60px 40px;
-      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 2px solid #000;
+      padding-bottom: 20px;
     }
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 15px;
+    h1 {
+      font-size: 1.8em;
+      font-weight: normal;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
     }
-    header p {
-      font-size: 1.2em;
-      opacity: 0.95;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    main {
-      padding: 60px 40px;
-    }
-    .demo-section {
-      margin-bottom: 80px;
-      padding-bottom: 60px;
-      border-bottom: 3px solid #f0f0f0;
-    }
-    .demo-section:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    .demo-number {
-      display: inline-block;
-      background: #667eea;
-      color: white;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 45px;
-      font-weight: bold;
-      font-size: 1.3em;
-      margin-bottom: 15px;
-    }
-    h2 {
-      font-size: 2em;
-      color: #2c3e50;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-    .subtitle {
-      font-size: 1.15em;
+    .tagline {
+      font-size: 0.95em;
       color: #555;
-      margin-bottom: 30px;
       font-style: italic;
     }
-    h3 {
-      font-size: 1.4em;
-      color: #34495e;
-      margin-top: 25px;
+    .demo-section {
+      margin-bottom: 45px;
+    }
+    .demo-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
       margin-bottom: 15px;
     }
-    .features-list, .highlights {
-      background: #f8f9fa;
-      padding: 25px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      border-left: 4px solid #667eea;
+    .demo-number {
+      font-size: 0.9em;
+      font-weight: bold;
+      color: #666;
+      min-width: 20px;
     }
-    .features-list ul, .highlights ul {
+    h2 {
+      font-size: 1.3em;
+      font-weight: normal;
+      margin: 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 8px;
+      flex-grow: 1;
+    }
+    .subtitle {
+      font-size: 0.95em;
+      color: #666;
+      margin-bottom: 15px;
+      font-style: italic;
+      margin-left: 32px;
+    }
+    h3 {
+      font-size: 0.95em;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 32px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #444;
+    }
+    .content {
+      margin-left: 32px;
+      font-size: 0.95em;
+      line-height: 1.6;
+    }
+    ul {
       list-style: none;
       padding: 0;
     }
-    .features-list li, .highlights li {
-      padding: 10px 0;
-      padding-left: 30px;
+    li {
+      padding: 6px 0;
+      padding-left: 20px;
       position: relative;
-      color: #555;
     }
-    .features-list li:before, .highlights li:before {
-      content: "→";
+    li:before {
+      content: "•";
       position: absolute;
       left: 0;
-      color: #667eea;
-      font-weight: bold;
+      color: #999;
     }
     .voice-player {
-      background: #f0f4ff;
-      padding: 30px;
-      border-radius: 10px;
-      margin: 25px 0;
-      border: 2px solid #e0e7ff;
+      background: #f5f5f5;
+      padding: 18px;
+      margin: 12px 0;
+      border-left: 3px solid #000;
     }
     .voice-name {
-      font-size: 1.3em;
       font-weight: bold;
-      color: #2c3e50;
-      margin-bottom: 10px;
+      margin-bottom: 4px;
+      font-size: 0.95em;
     }
     .voice-description {
+      font-size: 0.9em;
       color: #666;
+      margin-bottom: 10px;
       font-style: italic;
-      margin-bottom: 15px;
-      font-size: 1em;
     }
     audio {
       width: 100%;
       max-width: 100%;
-      margin-bottom: 15px;
-      padding: 10px;
-      background: white;
-      border-radius: 8px;
-      border: 1px solid #ddd;
+      margin-bottom: 8px;
+      height: 28px;
+    }
+    audio::-webkit-media-controls-panel {
+      background-color: #fff;
     }
     .download-link {
-      color: #667eea;
+      color: #000;
       text-decoration: none;
-      font-weight: 600;
+      border-bottom: 1px solid #000;
+      font-size: 0.9em;
     }
     .download-link:hover {
-      text-decoration: underline;
-    }
-    .tech-stack {
-      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-      padding: 30px;
-      border-radius: 10px;
-      margin-top: 40px;
-    }
-    .tech-stack h3 {
-      margin-top: 0;
-    }
-    .tech-stack ul {
-      list-style: none;
-      padding: 0;
-    }
-    .tech-stack li {
-      padding: 8px 0;
-      padding-left: 25px;
-      position: relative;
-    }
-    .tech-stack li:before {
-      content: "⚙️";
-      position: absolute;
-      left: 0;
+      background: #f0f0f0;
     }
     .note {
-      background: #fff3cd;
-      border-left: 4px solid #ffc107;
-      padding: 20px;
-      border-radius: 6px;
-      margin-top: 20px;
-      color: #856404;
+      background: #f9f9f9;
+      border-left: 3px solid #999;
+      padding: 12px 15px;
+      margin: 15px 0;
+      font-size: 0.9em;
+      color: #555;
+      margin-left: 32px;
     }
-    .success {
-      background: #d4edda;
-      border-left: 4px solid #28a745;
-      padding: 20px;
-      border-radius: 6px;
-      margin-top: 20px;
-      color: #155724;
+    .note strong {
+      font-weight: bold;
     }
     footer {
-      background: #f8f9fa;
-      padding: 40px;
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #e0e0e0;
       text-align: center;
-      color: #666;
-      border-top: 2px solid #e0e0e0;
+      font-size: 0.85em;
+      color: #999;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>🔗 Local LangChain AI Demos</h1>
-      <p>A bunch of concise, production-ready examples showcasing <strong>local LLM applications with LangChain, LangGraph, Ollama, vector databases and more</strong></p>
+      <h1>Local LangChain AI Demos</h1>
+      <p class="tagline">Production-ready examples showcasing local LLM applications with LangChain, LangGraph, Ollama, and vector databases</p>
     </header>
 
-    <main>
-      <!-- Demo 1: Research Synthesizer -->
-      <section class="demo-section">
-        <div class="demo-number">1</div>
-        <h2>🔬 Research Synthesizer Assistant</h2>
-        <p class="subtitle">AI-powered research assistant that synthesizes comprehensive answers from multiple sources</p>
-        
-        <h3>Features</h3>
-        <div class="features-list">
-          <ul>
-            <li><strong>Local Documents:</strong> Index and search PDFs/TXT files via FAISS vector database</li>
-            <li><strong>arXiv Papers:</strong> Automatic academic paper retrieval and analysis</li>
-            <li><strong>Web Search:</strong> Real-time information via Tavily API (optional)</li>
-            <li><strong>Smart RAG Pipeline:</strong> HuggingFace embeddings + cross-encoder reranking</li>
-            <li><strong>Modern UI:</strong> Gradio interface with collapsible sidebar and report management</li>
-          </ul>
-        </div>
+    <!-- Demo 1: Research Synthesizer -->
+    <section class="demo-section">
+      <div class="demo-header">
+        <span class="demo-number">1.</span>
+        <h2>Research Synthesizer Assistant</h2>
+      </div>
+      <p class="subtitle">AI-powered research assistant that synthesizes comprehensive answers from multiple sources</p>
+      
+      <h3>Features</h3>
+      <div class="content">
+        <ul>
+          <li>Local Documents: Index and search PDFs/TXT files via FAISS vector database</li>
+          <li>arXiv Papers: Automatic academic paper retrieval and analysis</li>
+          <li>Web Search: Real-time information via Tavily API (optional)</li>
+          <li>Smart RAG Pipeline: HuggingFace embeddings + cross-encoder reranking</li>
+          <li>Modern UI: Gradio interface with collapsible sidebar and report management</li>
+        </ul>
+      </div>
 
-        <h3>Tech Stack</h3>
-        <div class="features-list">
-          <ul>
-            <li><strong>LLM:</strong> Ollama (Qwen, Mistral) via LangChain/LangGraph</li>
-            <li><strong>Vector DB:</strong> FAISS with all-MiniLM-L6-v2 embeddings</li>
-            <li><strong>Reranking:</strong> Cross-encoder ms-marco-MiniLM-L-6-v2</li>
-            <li><strong>Interface:</strong> Gradio 6.1+</li>
-          </ul>
-        </div>
+      <h3>Tech Stack</h3>
+      <div class="content">
+        <ul>
+          <li>LLM: Ollama (Qwen, Mistral) via LangChain/LangGraph</li>
+          <li>Vector DB: FAISS with all-MiniLM-L6-v2 embeddings</li>
+          <li>Reranking: Cross-encoder ms-marco-MiniLM-L-6-v2</li>
+          <li>Interface: Gradio 6.1+</li>
+        </ul>
+      </div>
 
-        <h3>Quick Start</h3>
-        <div class="features-list">
-          <ul>
-            <li>Place documents in ./research_docs</li>
-            <li>Configure CONFIG dictionary (model, API keys, retrieval settings)</li>
-            <li>Run the app - it auto-indexes documents and launches web UI</li>
-            <li>Ask research questions - reports saved to ./report_docs</li>
-          </ul>
-        </div>
+      <div class="note">
+        <strong>Note:</strong> Research tool for educational purposes. Verify important information from primary sources.
+      </div>
+    </section>
 
-        <div class="note">
-          <strong>ℹ️ Note:</strong> Research tool for educational purposes. Verify important information from primary sources.
-        </div>
-      </section>
+    <!-- Demo 2: Piper TTS Voice Showcase -->
+    <section class="demo-section">
+      <div class="demo-header">
+        <span class="demo-number">2.</span>
+        <h2>Piper TTS Voice Showcase</h2>
+      </div>
+      <p class="subtitle">Interactive demo of 4 high-quality neural TTS voices with 904 LibriTTS speaker variants</p>
 
-      <!-- Demo 2: Piper TTS Voice Showcase -->
-      <section class="demo-section">
-        <div class="demo-number">2</div>
-        <h2>🎙️ Piper TTS Voice Showcase</h2>
-        <p class="subtitle">Interactive demo of 4 high-quality neural TTS voices with 904 LibriTTS speaker variants</p>
-
-        <h3>Voice Samples</h3>
-        
+      <h3>Voice Samples</h3>
+      
+      <div class="content">
         <div class="voice-player">
           <div class="voice-name">Heather</div>
           <div class="voice-description">Natural, conversational female voice (medium quality)</div>
           <audio controls>
-            <source src="wav/heather.wav" type="audio/wav">
+            <source src="../piper-tts-demo/wav/heather.wav" type="audio/wav">
             Your browser does not support the audio element.
           </audio>
-          <p><a href="wav/heather.wav" class="download-link" download>📥 Download heather.wav</a> (~500KB)</p>
+          <p><a href="../piper-tts-demo/wav/heather.wav" class="download-link" download>Download heather.wav</a> (~500KB)</p>
         </div>
 
         <div class="voice-player">
           <div class="voice-name">Michael</div>
           <div class="voice-description">Balanced, natural male voice (medium quality)</div>
           <audio controls>
-            <source src="wav/mike.wav" type="audio/wav">
+            <source src="../piper-tts-demo/wav/mike.wav" type="audio/wav">
             Your browser does not support the audio element.
           </audio>
-          <p><a href="wav/mike.wav" class="download-link" download>📥 Download mike.wav</a> (~500KB)</p>
+          <p><a href="../piper-tts-demo/wav/mike.wav" class="download-link" download>Download mike.wav</a> (~500KB)</p>
         </div>
+      </div>
 
-        <h3>Highlights</h3>
-        <div class="highlights">
-          <ul>
-            <li><strong>4 voice models:</strong> Heather, Michael, Lessac, LibriTTS</li>
-            <li><strong>904 unique speakers</strong> in LibriTTS multi-speaker model</li>
-            <li><strong>Smart preprocessing:</strong> Tables, citations, markdown cleanup</li>
-            <li><strong>Auto-generate & cache</strong> WAV files locally</li>
-            <li><strong>Table linearization</strong> for natural speech rendering</li>
-            <li><strong>Interactive player</strong> with voice/speaker selection</li>
-          </ul>
-        </div>
+      <h3>Highlights</h3>
+      <div class="content">
+        <ul>
+          <li>4 voice models: Heather, Michael, Lessac, LibriTTS</li>
+          <li>904 unique speakers in LibriTTS multi-speaker model</li>
+          <li>Smart preprocessing: tables, citations, markdown cleanup</li>
+          <li>Auto-generate and cache WAV files locally</li>
+          <li>Table linearization for natural speech rendering</li>
+          <li>Interactive player with voice and speaker selection</li>
+        </ul>
+      </div>
 
-        <div class="success">
-          <strong>Use Cases:</strong> Local TTS synthesis, voice comparison, accessibility tools, audio content generation
-        </div>
-      </section>
+      <div class="note">
+        <strong>Use Cases:</strong> Local TTS synthesis, voice comparison, accessibility tools, audio content generation
+      </div>
+    </section>
 
-      <!-- Demo 3: Chatbot with Memory -->
-      <section class="demo-section">
-        <div class="demo-number">3</div>
-        <h2>💬 Chatbot Assistant with Persistent Memory</h2>
-        <p class="subtitle">A fully local, tool-enabled chatbot with session-isolated, persistent memory</p>
+    <!-- Demo 3: Chatbot with Memory -->
+    <section class="demo-section">
+      <div class="demo-header">
+        <span class="demo-number">3.</span>
+        <h2>Chatbot Assistant with Persistent Memory</h2>
+      </div>
+      <p class="subtitle">Fully local, tool-enabled chatbot with session-isolated, persistent memory</p>
 
-        <h3>Highlights</h3>
-        <div class="highlights">
-          <ul>
-            <li><strong>Persistent memory</strong> via LangGraph MemorySaver</li>
-            <li><strong>Tool calling:</strong> Wikipedia, Tavily, custom tools</li>
-            <li><strong>Local LLMs</strong> via Ollama (e.g., qwen2.5:3b)</li>
-            <li><strong>Gradio UI</strong> with session state</li>
-            <li><strong>Privacy-first,</strong> offline-capable</li>
-          </ul>
-        </div>
+      <h3>Highlights</h3>
+      <div class="content">
+        <ul>
+          <li>Persistent memory via LangGraph MemorySaver</li>
+          <li>Tool calling: Wikipedia, Tavily, custom tools</li>
+          <li>Local LLMs via Ollama (e.g., qwen2.5:3b)</li>
+          <li>Gradio UI with session state</li>
+          <li>Privacy-first, offline-capable</li>
+        </ul>
+      </div>
 
-        <div class="success">
-          <strong>Use Cases:</strong> Personal assistants, research bots, privacy-sensitive apps
-        </div>
-      </section>
+      <div class="note">
+        <strong>Use Cases:</strong> Personal assistants, research bots, privacy-sensitive applications
+      </div>
+    </section>
 
-      <!-- Demo 4: LangChain RAG -->
-      <section class="demo-section">
-        <div class="demo-number">4</div>
-        <h2>📚 LangChain RAG</h2>
-        <p class="subtitle">A lightweight Retrieval-Augmented Generation (RAG) pipeline for grounded Q&A</p>
+    <!-- Demo 4: LangChain RAG -->
+    <section class="demo-section">
+      <div class="demo-header">
+        <span class="demo-number">4.</span>
+        <h2>LangChain RAG</h2>
+      </div>
+      <p class="subtitle">Lightweight Retrieval-Augmented Generation (RAG) pipeline for grounded question answering</p>
 
-        <h3>Highlights</h3>
-        <div class="highlights">
-          <ul>
-            <li><strong>In-memory vector store</strong> with semantic search</li>
-            <li><strong>Automatic document chunking</strong> + embeddings</li>
-            <li><strong>Ollama-powered LLM</strong> (Mistral 7B)</li>
-            <li><strong>Single-turn and multi-turn</strong> chat modes</li>
-            <li><strong>Pluggable embeddings:</strong> HuggingFace or fallback</li>
-          </ul>
-        </div>
+      <h3>Highlights</h3>
+      <div class="content">
+        <ul>
+          <li>In-memory vector store with semantic search</li>
+          <li>Automatic document chunking and embeddings</li>
+          <li>Ollama-powered LLM (Mistral 7B)</li>
+          <li>Single-turn and multi-turn chat modes</li>
+          <li>Pluggable embeddings: HuggingFace or fallback</li>
+        </ul>
+      </div>
 
-        <div class="success">
-          <strong>Use Cases:</strong> Document Q&A, knowledge assistants, RAG prototyping
-        </div>
-      </section>
+      <div class="note">
+        <strong>Use Cases:</strong> Document Q&A, knowledge assistants, RAG prototyping
+      </div>
+    </section>
 
-      <!-- Tech Stack Overview -->
-      <section class="tech-stack">
-        <h3>🛠️ Core Tech Stack</h3>
+    <!-- Tech Stack Overview -->
+    <section class="demo-section">
+      <h3 style="margin-left: 0; margin-top: 0;">Core Tech Stack</h3>
+      <div class="content">
         <ul>
           <li>LangChain (v1.0+)</li>
           <li>Ollama (local LLM inference)</li>
           <li>Gradio (chat UI)</li>
           <li>HuggingFace embeddings (optional)</li>
         </ul>
-        <p style="margin-top: 20px; color: #555;"><strong>Goal:</strong> Demonstrate clean, modern patterns for building <strong>local, private, LLM-powered systems</strong> with memory, tools, and retrieval.</p>
-      </section>
-    </main>
+        <p style="margin-top: 15px; font-style: italic; color: #555;">
+          <strong>Goal:</strong> Demonstrate clean, modern patterns for building local, private, LLM-powered systems with memory, tools, and retrieval.
+        </p>
+      </div>
+    </section>
 
     <footer>
       <p>Local LangChain AI Demos | Production-ready examples for local LLM applications</p>
