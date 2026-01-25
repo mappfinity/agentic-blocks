@@ -49,7 +49,7 @@ Interactive demo of 4 high-quality neural TTS voices with 904 LibriTTS speaker v
 <audio controls src="piper-tts-demo/wav/heather.wav"></audio>
 
 **Michael** (balanced male)
-<audio controls src="piper-tts-demo/wav/michael.wav"></audio>
+<audio controls src="piper-tts-demo/wav/mike.wav"></audio>
 
 **Use cases:** local TTS synthesis, voice comparison, accessibility tools, audio content generation.
 
