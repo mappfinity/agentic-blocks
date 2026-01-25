@@ -67,7 +67,7 @@ Listen to how each voice model synthesizes this content *(download to play)*:
 ### Michael
 *Balanced, natural male voice (medium quality)*
 
-📥 [Download michael.wav](wav/mike.wav) *(~500KB)*
+📥 [Download mike.wav](wav/mike.wav) *(~500KB)*
 
 ### Lessac
 *Professional, natural speech with best overall quality (high quality)*

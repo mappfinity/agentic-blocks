@@ -52,7 +52,7 @@ Interactive demo of 4 high-quality neural TTS voices with 904 LibriTTS speaker v
 ### Michael
 *Balanced, natural male voice (medium quality)*
 
-📥 [Download michael.wav](wav/mike.wav) *(~500KB)*
+📥 [Download mike.wav](wav/mike.wav) *(~500KB)*
 
 *Audio players available in the interactive notebook*
 
