@@ -30,9 +30,31 @@ A bunch of concise, production-ready examples showcasing **local LLM application
 
 *Research tool for educational purposes. Verify important information from primary sources.*
 
+---
+
+## 2. [Piper TTS Voice Showcase](piper-tts-demo/piper-tts-demo.ipynb)
+Interactive demo of 4 high-quality neural TTS voices with 904 LibriTTS speaker variants.
+
+**Highlights**
+- 🎙️ 4 voice models (Heather, Michael, Lessac, LibriTTS)
+- 🎚️ 904 unique speakers in LibriTTS multi-speaker model
+- 🔧 Smart preprocessing (tables, citations, markdown cleanup)
+- 🎵 Auto-generate & cache WAV files locally
+- 📊 Table linearization for natural speech rendering
+- 🔄 Interactive player with voice/speaker selection
+
+**Voice Samples:**
+
+**Heather** (conversational female)
+<audio controls src="piper-tts-demo/wav/heather.wav"></audio>
+
+**Michael** (balanced male)
+<audio controls src="piper-tts-demo/wav/michael.wav"></audio>
+
+**Use cases:** local TTS synthesis, voice comparison, accessibility tools, audio content generation.
 
 ---
-## 2. [Chatbot Assistant with Persistent Memory](chatbot-with-memory/Chatbot-with-Memory-and-Tools-Demo-w-LangChain-v1-Ollama-Gradio.ipynb)
+## 3. [Chatbot Assistant with Persistent Memory](chatbot-with-memory/Chatbot-with-Memory-and-Tools-Demo-w-LangChain-v1-Ollama-Gradio.ipynb)
 
 ![Overview](chatbot-with-memory/img/cba-with-memory.png)
 
@@ -49,7 +71,7 @@ A fully local, tool-enabled chatbot with session-isolated, persistent memory.
 
 ---
 
-## 3. [LangChain RAG](rag-demo/RAG-Demo-w-LangChain-v1-Ollama.ipynb)
+## 4. [LangChain RAG](rag-demo/RAG-Demo-w-LangChain-v1-Ollama.ipynb)
 A lightweight Retrieval-Augmented Generation (RAG) pipeline for grounded Q&A.
 
 **Highlights**
@@ -70,3 +92,4 @@ A lightweight Retrieval-Augmented Generation (RAG) pipeline for grounded Q&A.
 - HuggingFace embeddings (optional)
 
 **Goal:** demonstrate clean, modern patterns for building **local, private, LLM-powered systems** with memory, tools, and retrieval.
+
