@@ -32,7 +32,7 @@ A bunch of concise, production-ready examples showcasing **local LLM application
 
 ---
 
-## 2. [Piper TTS Voice Showcase](piper-tts-demo/piper-tts-demo.ipynb)
+## 4. [Piper TTS Voice Showcase](piper-tts-demo/piper-tts-demo.ipynb)
 Interactive demo of 4 high-quality neural TTS voices with 904 LibriTTS speaker variants.
 
 **Highlights**
@@ -44,12 +44,10 @@ Interactive demo of 4 high-quality neural TTS voices with 904 LibriTTS speaker v
 - 🔄 Interactive player with voice/speaker selection
 
 **Voice Samples:**
+- 🎤 [Heather (conversational female)](piper-tts-demo/wav/heather.wav) 
+- 🎤 [Michael (balanced male)](piper-tts-demo/wav/mike.wav)
 
-**Heather** (conversational female)
-<audio controls src="piper-tts-demo/wav/heather.wav"></audio>
-
-**Michael** (balanced male)
-<audio controls src="piper-tts-demo/wav/mike.wav"></audio>
+*Audio players available in the interactive notebook*
 
 **Use cases:** local TTS synthesis, voice comparison, accessibility tools, audio content generation.
 

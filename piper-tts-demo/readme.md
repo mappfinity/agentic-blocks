@@ -62,23 +62,26 @@ Listen to how each voice model synthesizes this content:
 ### Heather
 *Natural, conversational female voice (medium quality)*
 
-<audio controls src="wav/heather.wav"></audio>
+[🔊 Play/Download heather.wav](wav/heather.wav)
 
 ### Michael
 *Balanced, natural male voice (medium quality)*
 
-<audio controls src="wav/michael.wav"></audio>
+[🔊 Play/Download michael.wav](wav/mike.wav)
 
 ### Lessac
 *Professional, natural speech with best overall quality (high quality)*
 
-<audio controls src="wav/lessac.wav"></audio>
+[🔊 Play/Download lessac.wav](wav/lessac.wav)
 
 ### LibriTTS
 *High-quality voice with 904 diverse speakers to choose from*
 
-<audio controls src="wav/libritts_speaker_0.wav"></audio>
+[🔊 Play/Download libritts_speaker_0.wav](wav/libritts_speaker_0.wav)
 
+---
+
+💡 **Tip:** Click the links above to download or play the audio files. For the full interactive experience with all 904 LibriTTS speakers, run the notebook locally.
 ---
 
 ## 🚀 Features
