@@ -44,8 +44,15 @@ Interactive demo of 4 high-quality neural TTS voices with 904 LibriTTS speaker v
 - 🔄 Interactive player with voice/speaker selection
 
 **Voice Samples:**
-- 🎤 [Heather (conversational female)](piper-tts-demo/wav/heather.wav) 
-- 🎤 [Michael (balanced male)](piper-tts-demo/wav/mike.wav)
+### Heather
+*Natural, conversational female voice (medium quality)*
+
+📥 [Download heather.wav](wav/heather.wav) *(~500KB)*
+
+### Michael
+*Balanced, natural male voice (medium quality)*
+
+📥 [Download michael.wav](wav/mike.wav) *(~500KB)*
 
 *Audio players available in the interactive notebook*
 

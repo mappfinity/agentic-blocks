@@ -57,31 +57,31 @@ The voices synthesize the following research article excerpt from `demo.md`:
 
 ## 🎙️ Voice Samples
 
-Listen to how each voice model synthesizes this content:
+Listen to how each voice model synthesizes this content *(download to play)*:
 
 ### Heather
 *Natural, conversational female voice (medium quality)*
 
-[🔊 Play/Download heather.wav](wav/heather.wav)
+📥 [Download heather.wav](wav/heather.wav) *(~500KB)*
 
 ### Michael
 *Balanced, natural male voice (medium quality)*
 
-[🔊 Play/Download michael.wav](wav/mike.wav)
+📥 [Download michael.wav](wav/mike.wav) *(~500KB)*
 
 ### Lessac
 *Professional, natural speech with best overall quality (high quality)*
 
-[🔊 Play/Download lessac.wav](wav/lessac.wav)
+📥 [Download lessac.wav](wav/lessac.wav) *(~800KB)*
 
 ### LibriTTS
 *High-quality voice with 904 diverse speakers to choose from*
 
-[🔊 Play/Download libritts_speaker_0.wav](wav/libritts_speaker_0.wav)
+📥 [Download libritts_speaker_0.wav](wav/libritts_speaker_0.wav) *(~800KB)*
 
 ---
 
-💡 **Tip:** Click the links above to download or play the audio files. For the full interactive experience with all 904 LibriTTS speakers, run the notebook locally.
+💡 **To listen:** Download the files above or run the interactive notebook locally for instant playback with all 904 LibriTTS speakers.
 ---
 
 ## 🚀 Features
