@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-01-29T06:46:15.798975",
+  "ttl_hours": 480,
+  "capabilities": {
+    "gpt-oss:20b#0#512": {
+      "model": "gpt-oss:20b",
+      "temperature": 0,
+      "context_window": 512,
+      "supports_reasoning": true,
+      "reason": "Reasoning mode test passed",
+      "timestamp": "2026-01-29T06:46:15.798975"
+    }
+  }
+}
